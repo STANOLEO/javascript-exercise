@@ -134,7 +134,7 @@ describe("basics", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
-            const object= {someProperty:1}
+            const object= {someProperty:1};
             ////////////////////////////////////////////////////////////////////
 
             expect(object instanceof Object).to.equal(true);
@@ -145,11 +145,12 @@ describe("basics", function() {
     describe("Set a property to undefined", function() {
         it("should run without errors", function() {
             const object = {
-                someProperty: 1
+                someProperty: 
             };
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
+            object.someProperty= undefined
 
             ////////////////////////////////////////////////////////////////////
 
@@ -169,6 +170,7 @@ describe("basics", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
+            delete object.someProperty;
 
             ////////////////////////////////////////////////////////////////////
 
@@ -186,6 +188,7 @@ describe("basics", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
+            const seconArray= firstArray;
 
             ////////////////////////////////////////////////////////////////////
 
@@ -208,6 +211,7 @@ describe("basics", function() {
             ////////////////////////////////////////////////////////////////////
             // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
             // ✏️ ADD CODE HERE ✏️
+            const secondArray= Array.of(...firstArray);
 
             ////////////////////////////////////////////////////////////////////
 
@@ -229,6 +233,8 @@ describe("basics", function() {
             ////////////////////////////////////////////////////////////////////
             // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
             // ✏️ ADD CODE HERE ✏️
+            var longArray=new Array(100);
+            console.log(longArray.length);
 
             ////////////////////////////////////////////////////////////////////
 
@@ -246,6 +252,8 @@ describe("basics", function() {
             // By observing their casting behavior in the tests below, you can find
             // out the required types.
             // ✏️ ADD CODE HERE ✏️
+            const firstVariable=1+2;
+            const secondVariable="1";
 
             ////////////////////////////////////////////////////////////////////
 
@@ -263,6 +271,10 @@ describe("basics", function() {
             ////////////////////////////////////////////////////////////////////
             // Can you find a string that casts to `false` in an if() statement?
             // ✏️ ADD CODE HERE ✏️
+            const falsyString="";
+            if(falsyString){
+                console.log("falsyString is not falsy")
+            }
 
             ////////////////////////////////////////////////////////////////////
 
@@ -304,6 +316,10 @@ describe("basics", function() {
             ////////////////////////////////////////////////////////////////////
             // Can you find a value that is typeof "object" but also casts to `false`?
             // ✏️ ADD CODE HERE ✏️
+            var falsyThing = null;
+            if(falsyThing){
+                console.log("falsyThing is not falsy")
+            }
 
             ////////////////////////////////////////////////////////////////////
 
